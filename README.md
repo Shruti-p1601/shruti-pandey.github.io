@@ -7,9 +7,9 @@ It highlights my journey as a developer passionate about **AI, ML, and Web Devel
 
 ## 🖼️ Screenshots
 
-<img width="1902" height="994" alt="Front Page" src="https://github.com/user-attachments/assets/6f78ceb0-363c-41e8-9eb9-a26fa814e8ac" />
-<img width="1894" height="992" alt="Skills Section" src="https://github.com/user-attachments/assets/8a6eeff0-3ebc-446c-a1ac-5f1a02279ac8" />
-<img width="1903" height="1044" alt="Research Section" src="https://github.com/user-attachments/assets/355b1c4c-83e6-4465-9081-bff34bb3ad3b" />
+<img width="1902" height="994" alt="public/front page.png" src="https://github.com/user-attachments/assets/6f78ceb0-363c-41e8-9eb9-a26fa814e8ac" />
+<img width="1894" height="992" alt="public/skills.png" src="https://github.com/user-attachments/assets/8a6eeff0-3ebc-446c-a1ac-5f1a02279ac8" />
+<img width="1903" height="1044" alt="public/research.png" src="https://github.com/user-attachments/assets/355b1c4c-83e6-4465-9081-bff34bb3ad3b" />
 
 ---
 
