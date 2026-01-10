@@ -7,23 +7,18 @@ export default function Blog() {
   const defaultPosts = [
     {
       id: 1,
-      title: "Why I Love Building AI Projects",
-      text: "Working on AI-based systems like mammogram cancer detection has taught me how impactful technology can be when applied to healthcare. Combining deep learning with real-world problems is my favorite way to innovate.",
+      title: "The Future of Web Development: Trends I’m Excited About",
+      text: "The future of web development excites me because of the rapid evolution of technologies like AI-driven development tools, Progressive Web Apps, and Jamstack architecture. I’m particularly fascinated by enhanced user experiences, micro-interactions, and accessibility-focused design.",
     },
     {
       id: 2,
-      title: "My Thoughts on Design & Aesthetics",
-      text: "I believe design should be a balance between functionality and emotion. Dark themes with minimalist layouts always inspire me to create something that feels personal and futuristic.",
+      title: "Why Learning Full-Stack Development Changed My Perspective on Coding",
+      text: "Learning full-stack development transformed my view of coding. Understanding both front-end and back-end processes showed me how components work together to create seamless applications.",
     },
     {
       id: 3,
-      title: "Balancing Tech and Creativity",
-      text: "As someone who codes and dances, I’ve realized creativity isn’t limited to art — it also lives in algorithms. Each project is like choreography for the mind.",
-    },
-    {
-      id: 4,
-      title: "The Beauty of Simple Code",
-      text: "Clean code isn’t just about fewer lines — it’s about clarity. Elegance in code feels like poetry to me — each function should have rhythm and purpose.",
+      title: "Beyond Code: How Creativity Shapes a Web Developer",
+      text: "Beyond writing code, creativity is the heart of web development. Designing intuitive interfaces, smooth animations, and engaging user experiences requires imagination.",
     },
   ];
 
@@ -32,27 +27,44 @@ export default function Blog() {
   useEffect(() => {
     const savedVotes = JSON.parse(localStorage.getItem("kd_blog_votes") || "{}");
     const votedByUser = JSON.parse(localStorage.getItem("kd_blog_voted") || "{}");
+
     const withVotes = defaultPosts.map((p) => ({
       ...p,
       agree: savedVotes[p.id]?.agree || 0,
       disagree: savedVotes[p.id]?.disagree || 0,
       userVote: votedByUser[p.id] || null,
     }));
+
     setPosts(withVotes);
   }, []);
 
+  // ✅ FIXED vote logic (switchable)
   function vote(id, type) {
-    const votedByUser = JSON.parse(localStorage.getItem("kd_blog_voted") || "{}");
-    if (votedByUser[id]) return;
+    const votedByUser = JSON.parse(localStorage.getItem("kd_blog_voted") || {});
 
-    const next = posts.map((p) =>
-      p.id === id ? { ...p, [type]: p[type] + 1, userVote: type } : p
-    );
+    const next = posts.map((p) => {
+      if (p.id !== id) return p;
+
+      let agree = p.agree;
+      let disagree = p.disagree;
+
+      // remove previous vote
+      if (p.userVote === "agree") agree--;
+      if (p.userVote === "disagree") disagree--;
+
+      // add new vote
+      if (type === "agree") agree++;
+      if (type === "disagree") disagree++;
+
+      return { ...p, agree, disagree, userVote: type };
+    });
+
     setPosts(next);
 
     const votes = Object.fromEntries(
       next.map((p) => [p.id, { agree: p.agree, disagree: p.disagree }])
     );
+
     localStorage.setItem("kd_blog_votes", JSON.stringify(votes));
     localStorage.setItem(
       "kd_blog_voted",
@@ -75,6 +87,7 @@ export default function Blog() {
       >
         📝 My Blog
       </motion.h2>
+
       <p className="blog-sub">
         Personal thoughts, experiences, and reflections — feel free to react!
       </p>
@@ -87,10 +100,7 @@ export default function Blog() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: idx * 0.15 }}
-            whileHover={{
-              scale: 1.02,
-              boxShadow: "0 0 20px rgba(255,255,255,0.1)",
-            }}
+            whileHover={{ scale: 1.02 }}
           >
             <h3 className="post-title">{p.title}</h3>
             <p className="post-text">{p.text}</p>
@@ -98,7 +108,6 @@ export default function Blog() {
             <div className="vote-container">
               <motion.button
                 onClick={() => vote(p.id, "agree")}
-                disabled={!!p.userVote}
                 whileTap={{ scale: 0.85 }}
                 whileHover={{ scale: 1.15 }}
                 className={`vote-btn-circle agree ${
@@ -106,19 +115,11 @@ export default function Blog() {
                 }`}
               >
                 <ThumbsUp size={20} />
-                <motion.span
-                  key={p.agree}
-                  initial={{ opacity: 0, y: -4 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="vote-count"
-                >
-                  {p.agree}
-                </motion.span>
+                <span className="vote-count">{p.agree}</span>
               </motion.button>
 
               <motion.button
                 onClick={() => vote(p.id, "disagree")}
-                disabled={!!p.userVote}
                 whileTap={{ scale: 0.85 }}
                 whileHover={{ scale: 1.15 }}
                 className={`vote-btn-circle disagree ${
@@ -126,14 +127,7 @@ export default function Blog() {
                 }`}
               >
                 <ThumbsDown size={20} />
-                <motion.span
-                  key={p.disagree}
-                  initial={{ opacity: 0, y: -4 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="vote-count"
-                >
-                  {p.disagree}
-                </motion.span>
+                <span className="vote-count">{p.disagree}</span>
               </motion.button>
             </div>
           </motion.div>

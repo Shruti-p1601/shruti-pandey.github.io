@@ -79,12 +79,30 @@
 /* (if you previously had them, they remain valid and won't be impacted) */
 
 /* Example: if needed, re-declare to ensure no inherited changes */
+
 .skills-table {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
+
+/* .skills-row {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+ 
+.skill-box {
+  background: linear-gradient(145deg, #080808 0%, #0f0f0f 100%);
+  border: 1px solid rgba(0, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 18px 22px;
+  width: 300px;
+  text-align: left;
+}  */
 
 .skills-row {
   display: flex;
@@ -98,6 +116,8 @@
   border: 1px solid rgba(0, 255, 255, 0.12);
   border-radius: 12px;
   padding: 18px 22px;
-  width: 300px;
+  flex: 1 1 250px; /* makes them flexible and side by side */
+  max-width: 300px; /* prevents from growing too big */
   text-align: left;
 }
+

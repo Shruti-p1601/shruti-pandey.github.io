@@ -35,17 +35,15 @@ export default function Resume() {
           A quick glance at my journey.
         </motion.p>
 
-        {/* Profile Header */}
+        {/* Profile Header (No Photo) */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
           style={{
             display: "flex",
-            justifyContent: "space-between",
-            alignItems: "flex-start",
-            flexWrap: "wrap",
-            gap: 20,
+            flexDirection: "column",
+            gap: 16,
             background: "rgba(255,255,255,0.03)",
             padding: "24px 20px",
             borderRadius: 12,
@@ -53,42 +51,40 @@ export default function Resume() {
         >
           <div>
             <h3 style={{ fontSize: 24, color: "#00b4ff", marginBottom: 4 }}>
-              👨‍💻 KUNJ D. DESAI
+              👩‍💻 Shruti Pandey
             </h3>
-            <p style={{ margintop: 10, fontSize: 15, color: "#ccc" }}>
-              4th Year B.Tech — AI & Data Science | S.C.E.T, Sarvajanik University
+            <p style={{ marginTop: 10, fontSize: 15, color: "#ccc" }}>
+              4th Year B.Tech — Computer Science & Engineering | Bengal College of Engineering & Technology
             </p>
             <p style={{ margin: "4px 0", fontSize: 14, color: "#aaa" }}>
-              📍 Jahangirpura, Surat, Gujarat
+              📍 Durgapur, West Bengal, India
             </p>
             <p style={{ margin: "4px 0", fontSize: 14, color: "#aaa" }}>
-              ✉️ kunjd2803@gmail.com | 📞 +91 8758209508
+              ✉️ shru4350@example.com
             </p>
           </div>
 
           <motion.div
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.03 }}
             style={{
-              background: "linear-gradient(135deg, #00b4ff44, #0b0b0b)",
+              background: "linear-gradient(135deg, #00b4ff22, #0b0b0b)",
               borderRadius: 12,
               padding: "14px 20px",
               border: "1px solid rgba(255,255,255,0.1)",
-              maxWidth: 560,
               fontSize: 14,
               lineHeight: 1.6,
             }}
           >
             <strong style={{ color: "#00b4ff" }}>Professional Summary:</strong>
             <p style={{ marginTop: 6, color: "#ccc" }}>
-              4th-year B.Tech AI student experienced in ML, DL, and computer vision.
-              Skilled in Python, TensorFlow, PyTorch, and Scikit-learn. Passionate about
-              building impactful AI systems and seeking opportunities to contribute to
-              real-world AI projects.
+              4th-year B.Tech student with a passion for Web Development and Full-Stack Applications.
+              Skilled in HTML, CSS, JavaScript, React.js, Node.js, MongoDB, and Git.
+              Interested in building interactive, responsive web experiences and contributing to innovative tech projects.
             </p>
           </motion.div>
         </motion.div>
 
-        {/* Education Section with Border Box */}
+        {/* Education Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -106,24 +102,20 @@ export default function Resume() {
           </h4>
           <ul style={{ listStyle: "none", padding: 0, margin: 0, lineHeight: 1.8 }}>
             <li>
-              <strong>B.Tech in Artificial Intelligence & Data Science</strong> — S.C.E.T
-              (Sarvajanik University), 2022–2026 <br />
-              <span style={{ color: "#aaa" }}>GPA: 9.0</span>
-            </li>
-            <li style={{ marginTop: 8 }}>
-              <strong>12th Board — R.S.M. Poonawala Experimental School</strong> (Gujarat
-              Board, 2022) <br />
-              <span style={{ color: "#aaa" }}>Percentage: 78%</span>
-            </li>
-            <li style={{ marginTop: 8 }}>
-              <strong>10th Board — Ambika Niketan School</strong> (Gujarat Board, 2020)
+              <strong>B.Tech in Computer Science & Engineering</strong> — Bengal College of Engineering & Technology (2022–2026)
               <br />
-              <span style={{ color: "#aaa" }}>Percentage: 85%</span>
+              <span style={{ color: "#aaa" }}>GPA: 7.51 (till 6th sem)</span>
+            </li>
+            <li style={{ marginTop: 8 }}>
+              <strong>12th Board — Bidhan Chandra Institution for Girls</strong> (West Bengal Board, 2022)
+            </li>
+            <li style={{ marginTop: 8 }}>
+              <strong>10th Board — Carmel Convent High School</strong> (ICSE Board, 2020)
             </li>
           </ul>
         </motion.div>
 
-        {/* Projects */}
+        {/* Projects Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -132,14 +124,14 @@ export default function Resume() {
         >
           <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>💼 Projects</h4>
           <ul style={{ listStyle: "none", padding: 0, margin: 0, lineHeight: 1.8 }}>
-            <li>1️⃣ Breast Cancer Detection from Mammograms using YOLO & CNN</li>
-            <li>2️⃣ DocuChat: Document Q&A Chatbot (Gemini API)</li>
-            <li>3️⃣ Indian Sign Language Interpreter (In Progress)</li>
-            <li>4️⃣ Mental Health Analyzer</li>
+            <li>1️⃣ Skill Gap AI Analyzer – A web app that analyzes skill gaps and suggests learning paths using Python and ML.</li>
+            <li>2️⃣ Dragon Fruit Quality Grading – Deep Learning project for grading dragon fruits quality.</li>
+            <li>3️⃣ Personal Portfolio Website – Built with React.js and Tailwind CSS, showcasing projects, skills, and contact info.</li>
+            <li>4️⃣ DocuChat: Document Q&A Chatbot (Gemini API)</li>
           </ul>
         </motion.div>
 
-        {/* Skills */}
+        {/* Skills Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -148,28 +140,7 @@ export default function Resume() {
         >
           <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>⚙️ Skills</h4>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-            {[
-              "Python",
-              "C",
-              "C++",
-              "Java",
-              "TensorFlow",
-              "PyTorch",
-              "Scikit-learn",
-              "OpenCV",
-              "YOLO",
-              "Streamlit",
-              "React",
-              "MySQL",
-              "MongoDB",
-              "Git",
-              "NLP",
-              "Explainable AI (XAI)",
-              "Problem Solving",
-              "Teamwork",
-              "Adaptability",
-              "Creativity",
-            ].map((skill) => (
+            {["Python", "Java", "SQL", "HTML", "CSS", "JavaScript", "React", "Git"].map((skill) => (
               <motion.span
                 key={skill}
                 whileHover={{ scale: 1.1, backgroundColor: "rgba(0,180,255,0.3)" }}
@@ -186,39 +157,6 @@ export default function Resume() {
             ))}
           </div>
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.4 }}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: 30,
-            marginTop: 40,
-          }}
-        >
-          {[
-            { name: "🏆 LeetCode", link: "https://leetcode.com/u/Kunj_2803/" },
-            { name: "💻 GitHub", link: "https://github.com/kunj2803" },
-            { name: "💼 LinkedIn", link: "https://www.linkedin.com/in/kunj-desai-07717b293/" },
-          ].map((site) => (
-            <motion.a
-              key={site.name}
-              href={site.link}
-              target="_blank"
-              rel="noreferrer"
-              whileHover={{ scale: 1.1, color: "#00b4ff" }}
-              style={{
-                color: "#ccc",
-                textDecoration: "none",
-                fontSize: 15,
-                fontWeight: 500,
-              }}
-            >
-              {site.name}
-            </motion.a>
-          ))}
-        </motion.div>
 
         {/* PDF Viewer */}
         <motion.div
@@ -234,7 +172,7 @@ export default function Resume() {
         >
           <iframe
             src="/resume.pdf"
-            title="Kunj Desai Resume"
+            title="Shruti Pandey Resume"
             style={{
               width: "100%",
               height: "650px",
@@ -264,8 +202,6 @@ export default function Resume() {
         >
           ⬇️ Download Resume
         </motion.a>
-
-
       </motion.div>
     </section>
   );

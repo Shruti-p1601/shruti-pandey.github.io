@@ -56,25 +56,18 @@ const AboutMe = () => {
             marginBottom: "1rem",
           }}
         >
-          Hi, I’m <strong>Kunj Desai</strong> — an aspiring{" "}
-          <strong>Artificial Intelligence Engineer</strong> and{" "}
-          <strong>Machine Learning enthusiast</strong> who loves turning ideas
-          into intelligent systems. I’m deeply fascinated by how data and
-          algorithms can shape the future of healthcare, automation, and
-          creativity in technology.
+          Hi, I’m <strong>Shruti Pandey</strong> — an aspiring{" "}
+          <strong>Full-Stack Developer</strong> and enthusiast about building interactive & responsive websites. I am deeply fascinated by creating web experiences that offer seamless user interaction.
         </p>
 
         <p style={{ fontSize: "1.1rem", color: "rgba(255,255,255,0.8)" }}>
-          Beyond code, I enjoy exploring design, experimenting with motion and
-          interaction, and finding ways to blend{" "}
-          <strong>artistic creativity</strong> with{" "}
-          <strong>technical precision</strong>. My goal is to build solutions
-          that not only perform — but also inspire.
+          Beyond code, I enjoy reading tech blogs, sketching, and photography. My goal is to craft websites that are not only functional but also intuitive and engaging.
         </p>
 
         <p>
-            4th-year B.Tech AI Engineering student with hands-on experience in ML & DL Projects. Proficient in Python, scikitlearn,pytorch,tensorflow and data preprocessing. Seeking internship opportunities to apply skills and contribute to
-            impactful AI solutions.
+          4th-year B.Tech CSE student at <strong>Bengal College of Engineering and Technology, Durgapur, West Bengal</strong>.  
+          Currently pursuing Higher Secondary (12th) from <strong>Bidhan Chandra Institution for Girls, Durgapur</strong> and Secondary (10th) from <strong>Carmel Convent High School, Durgapur</strong>.  
+          Current CGPA: 7.51
         </p>
 
         {/* --- Education Section --- */}
@@ -88,8 +81,7 @@ const AboutMe = () => {
             style={{
               fontSize: "1.6rem",
               marginBottom: "1.5rem",
-              background:
-                "linear-gradient(90deg, var(--accent), var(--accent-2))",
+              background: "linear-gradient(90deg, var(--accent), var(--accent-2))",
               WebkitBackgroundClip: "text",
               color: "transparent",
             }}
@@ -104,12 +96,9 @@ const AboutMe = () => {
               gap: "1.2rem",
             }}
           >
-            {/* --- Education Card 1 --- */}
+            {/* --- B.Tech --- */}
             <motion.div
-              whileHover={{
-                scale: 1.02,
-                boxShadow: "0 0 25px rgba(0,255,200,0.15)",
-              }}
+              whileHover={{ scale: 1.02, boxShadow: "0 0 25px rgba(0,255,200,0.15)" }}
               transition={{ duration: 0.3 }}
               style={{
                 background: "rgba(255,255,255,0.05)",
@@ -124,37 +113,20 @@ const AboutMe = () => {
             >
               <FaUniversity size={40} color="var(--accent)" />
               <div>
-                <h4
-                  style={{
-                    color: "var(--accent)",
-                    marginBottom: "0.4rem",
-                    fontSize: "1.25rem",
-                  }}
-                >
-                  B.Tech in Artificial Intelligence and Data Science
+                <h4 style={{ color: "var(--accent)", marginBottom: "0.4rem", fontSize: "1.25rem" }}>
+                  B.Tech in Computer Science & Engineering
                 </h4>
-                <p
-                  style={{
-                    color: "rgba(255,255,255,0.85)",
-                    marginBottom: "0.2rem",
-                  }}
-                >
-                  <strong>S.C.E.T (Sarvajanik University)</strong> — Surat,
-                  Gujarat
+                <p style={{ color: "rgba(255,255,255,0.85)", marginBottom: "0.2rem" }}>
+                  <strong>Bengal College of Engineering and Technology</strong> — Durgapur, West Bengal
                 </p>
-                <p style={{ color: "rgba(255,255,255,0.7)" }}>
-                  4th Year (Pursuing) | GPA: 9.0
-                </p>
+                <p style={{ color: "rgba(255,255,255,0.7)" }}>4th Year (Pursuing) | CGPA: 7.51</p>
                 <p style={{ color: "rgba(255,255,255,0.7)" }}>2022 – 2026</p>
               </div>
             </motion.div>
 
-            {/* --- Education Card 2 --- */}
+            {/* --- 12th Grade --- */}
             <motion.div
-              whileHover={{
-                scale: 1.02,
-                boxShadow: "0 0 25px rgba(0,255,200,0.15)",
-              }}
+              whileHover={{ scale: 1.02, boxShadow: "0 0 25px rgba(0,255,200,0.15)" }}
               transition={{ duration: 0.3 }}
               style={{
                 background: "rgba(255,255,255,0.05)",
@@ -169,37 +141,20 @@ const AboutMe = () => {
             >
               <FaGraduationCap size={38} color="var(--accent)" />
               <div>
-                <h4
-                  style={{
-                    color: "var(--accent)",
-                    marginBottom: "0.4rem",
-                    fontSize: "1.25rem",
-                  }}
-                >
+                <h4 style={{ color: "var(--accent)", marginBottom: "0.4rem", fontSize: "1.25rem" }}>
                   Higher Secondary Education (12th Grade)
                 </h4>
-                <p
-                  style={{
-                    color: "rgba(255,255,255,0.85)",
-                    marginBottom: "0.2rem",
-                  }}
-                >
-                  <strong>R.S.M. Poonawala Experimental School</strong> — Ambika
-                  Niketan, Surat
+                <p style={{ color: "rgba(255,255,255,0.85)", marginBottom: "0.2rem" }}>
+                  <strong>Bidhan Chandra Institution for Girls</strong> — Durgapur
                 </p>
-                <p style={{ color: "rgba(255,255,255,0.7)" }}>
-                  Gujarat Board | Percentage: 78%
-                </p>
+                <p style={{ color: "rgba(255,255,255,0.7)" }}>West Bengal Board </p>
                 <p style={{ color: "rgba(255,255,255,0.7)" }}>Completed in 2022</p>
               </div>
             </motion.div>
 
-            {/* --- Education Card 3 --- */}
+            {/* --- 10th Grade --- */}
             <motion.div
-              whileHover={{
-                scale: 1.02,
-                boxShadow: "0 0 25px rgba(0,255,200,0.15)",
-              }}
+              whileHover={{ scale: 1.02, boxShadow: "0 0 25px rgba(0,255,200,0.15)" }}
               transition={{ duration: 0.3 }}
               style={{
                 background: "rgba(255,255,255,0.05)",
@@ -214,27 +169,13 @@ const AboutMe = () => {
             >
               <FaSchool size={36} color="var(--accent)" />
               <div>
-                <h4
-                  style={{
-                    color: "var(--accent)",
-                    marginBottom: "0.4rem",
-                    fontSize: "1.25rem",
-                  }}
-                >
+                <h4 style={{ color: "var(--accent)", marginBottom: "0.4rem", fontSize: "1.25rem" }}>
                   Secondary Education (10th Grade)
                 </h4>
-                <p
-                  style={{
-                    color: "rgba(255,255,255,0.85)",
-                    marginBottom: "0.2rem",
-                  }}
-                >
-                  <strong>R.S.M. Poonawala Experimental School</strong> — Surat,
-                  Gujarat
+                <p style={{ color: "rgba(255,255,255,0.85)", marginBottom: "0.2rem" }}>
+                  <strong>Carmel Convent High School</strong> — Durgapur, West Bengal
                 </p>
-                <p style={{ color: "rgba(255,255,255,0.7)" }}>
-                  Gujarat Board | Percentage: 69%
-                </p>
+                <p style={{ color: "rgba(255,255,255,0.7)" }}>ICSE Board </p>
                 <p style={{ color: "rgba(255,255,255,0.7)" }}>Completed in 2020</p>
               </div>
             </motion.div>

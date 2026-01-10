@@ -1,0 +1,105 @@
+.research-section {
+  padding: 90px 8%;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+.research-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 60px;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 35px;
+}
+
+.research-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  border-radius: 22px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.research-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.conference {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.research-gallery h4 {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.gallery-images {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.gallery-images img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+  transform: scale(1.15);
+}
+
+.research-certificate {
+  margin-top: 20px;
+}
+
+.research-certificate a {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: background 0.3s ease;
+}
+
+.research-certificate a:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+
+/* IMAGE MODAL */
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+.modal-image {
+  max-width: 85%;
+  max-height: 85%;
+  border-radius: 16px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+}
