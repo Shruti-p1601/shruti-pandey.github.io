@@ -10,7 +10,6 @@ const researchPapers = [
       "7th International Symposium on Devices, Circuits and Systems (ISDCS 2025)",
     description:
       "Hybrid deep learning-based approach for accurate brain tumor classification.",
-    gallery: ["/sanaka.jpg", "/sanaka2.jpg", "/sanaka3.jpg"],
     certificate: "/Author certificate.pdf",
   },
   {
@@ -20,6 +19,7 @@ const researchPapers = [
       "ICESISSF-2025, Sanaka Educational Trust’s Group of Institutions, Durgapur",
     description:
       "AI and deep learning techniques for predicting patient response and adverse events.",
+      gallery: ["/sanaka.jpg", "/sanaka3.jpg"],
     certificate: "/CERTIFICATE OF PRESENTATION.pdf",
   },
   {
