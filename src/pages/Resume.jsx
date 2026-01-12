@@ -171,7 +171,7 @@ export default function Resume() {
           }}
         >
           <iframe
-            src="public/Shruti_Pandey_Deloitte_NLA.pdf"
+            src="/Shruti_Pandey_Deloitte_NLA.pdf"
             title="Shruti Pandey Resume"
             style={{
               width: "100%",
@@ -184,7 +184,7 @@ export default function Resume() {
 
         {/* Download Button */}
         <motion.a
-          href="public/Shruti_Pandey_Deloitte_NLA.pdf"
+          href="Shruti_Pandey_Deloitte_NLA.pdf"
           download
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

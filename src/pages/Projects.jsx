@@ -30,7 +30,7 @@ const PROJECTS = [
   {
   title: '💼 Portfolio Website',
   desc: 'A modern and responsive portfolio built with React and Framer Motion, showcasing projects, skills, and achievements with smooth animations and interactive UI.',
-  ss: 'public/front page.png',
+  ss: '/front page.png',
   tech: ['React', 'Framer Motion', 'Tailwind CSS'],
   live: 'shruti-pandey-githu-git-c66413-shruti-pandeys-projects-5bfd685c.vercel.app',
   code: 'https://github.com/Shruti-p1601/shruti-pandey.github.io'
@@ -62,7 +62,7 @@ const PROJECTS = [
   {
   title: '📚  E-Learning Website',
   desc: 'Beginner-friendly e-learning website with multiple course pages, login and registration UI, built to practice core web development concepts.',
-  ss: 'public/image.png',
+  ss: '/image.png',
   tech: ['HTML', 'CSS', 'Java (Basic)'],
   live: 'https://github.com/Shruti-p1601/First-project-e-learning',
   code: 'https://github.com/Shruti-p1601/First-project-e-learning'
@@ -70,7 +70,7 @@ const PROJECTS = [
   {
   title: '🍓 Deep Learning–Based Dragon Fruit Quality Grading',
   desc: 'Computer vision–based deep learning system to automatically classify dragon fruit quality using image preprocessing, augmentation, and CNN models.',
-  ss: 'public/dragon fruit.avif',
+  ss: '/dragon fruit.avif',
   tech: ['Python', 'TensorFlow / Keras', 'OpenCV', 'NumPy', 'Pandas', 'Matplotlib'],
   // live: '',
   // code: 'https://github.com/Shruti-p1601/dragon-fruit-quality-grading'
@@ -78,9 +78,9 @@ const PROJECTS = [
  {
   title: '🤖 AI-based Resume Analyzer and Skill Gap Detector',
   desc: 'An AI-powered resume analysis system developed as part of the Infosys AI initiative. The application compares resumes with job descriptions, identifies skill gaps, and provides actionable insights to improve ATS compatibility and job readiness.',
-  ss: 'public/resume.jpeg',
+  ss: '/resume.jpeg',
   tech: ['Python', 'NLP', 'Pandas', 'Machine Learning'],
-  // live: 'https://your-live-link-here',
+  live: 'https://github.com/Shruti-p1601/Shruti-p1601-SkillGapAI',
   code: 'https://github.com/Shruti-p1601/Shruti-p1601-SkillGapAI'
 }
 
