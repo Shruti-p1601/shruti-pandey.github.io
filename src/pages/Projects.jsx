@@ -3,63 +3,90 @@ import { motion } from 'framer-motion'
 import { Github, ExternalLink } from 'lucide-react'
 
 const PROJECTS = [
-  {
-    title: '🩺 Mammogram Malignancy Detector',
-    desc: 'Hybrid CNN + YOLOv8 ensemble for full-image breast cancer detection with ROI preprocessing and sliding-window inference.',
-    ss: '/mamo.png',
-    tech: ['TensorFlow', 'Keras', 'OpenCV', 'YOLOv8'],
-    live: '#',
-    code: 'https://github.com/kunjdesai/mammo-detector'
-  },
-  {
-  title: '🧠 Mental Health Analyzer',
-  desc: 'NLP-based system that analyzes user text to detect signs of anxiety, stress, and depression using sentiment analysis and transformer models.',
-  ss: '/mentalhealth.jpg',
-  tech: ['Python', 'Transformers', 'NLTK', 'scikit-learn'],
-  live: 'https://mental-health-analyzer.streamlit.app/',
-  code: 'https://github.com/kunj2803/Mental-Health-Analyzer'
-  },
-  {
-    title: '🤖 Indian Sign Language Interpreter',
-    desc: 'Real-time gesture recognition and translation using Mediapipe + TensorFlow, enabling live sign-to-text interpretation.',
-    ss: '/ISL.png',
-    tech: ['Mediapipe', 'TensorFlow', 'React', 'Flask'],
-    live: '#',
-    code: 'https://github.com/kunjdesai/ISL-Interpreter'
-  },
+  // {
+  //   title: '🩺 Mammogram Malignancy Detector',
+  //   desc: 'Hybrid CNN + YOLOv8 ensemble for full-image breast cancer detection with ROI preprocessing and sliding-window inference.',
+  //   ss: '/mamo.png',
+  //   tech: ['TensorFlow', 'Keras', 'OpenCV', 'YOLOv8'],
+  //   live: '#',
+  //   code: 'https://github.com/kunjdesai/mammo-detector'
+  // },
+  // {
+  // title: '🧠 Mental Health Analyzer',
+  // desc: 'NLP-based system that analyzes user text to detect signs of anxiety, stress, and depression using sentiment analysis and transformer models.',
+  // ss: '/mentalhealth.jpg',
+  // tech: ['Python', 'Transformers', 'NLTK', 'scikit-learn'],
+  // live: 'https://mental-health-analyzer.streamlit.app/',
+  // code: 'https://github.com/kunj2803/Mental-Health-Analyzer'
+  // },
+  // {
+  //   title: '🤖 Indian Sign Language Interpreter',
+  //   desc: 'Real-time gesture recognition and translation using Mediapipe + TensorFlow, enabling live sign-to-text interpretation.',
+  //   ss: '/ISL.png',
+  //   tech: ['Mediapipe', 'TensorFlow', 'React', 'Flask'],
+  //   live: '#',
+  //   code: 'https://github.com/kunjdesai/ISL-Interpreter'
+  // },
   {
   title: '💼 Portfolio Website',
   desc: 'A modern and responsive portfolio built with React and Framer Motion, showcasing projects, skills, and achievements with smooth animations and interactive UI.',
-  ss: '/portfolio.jpg',
+  ss: 'public/front page.png',
   tech: ['React', 'Framer Motion', 'Tailwind CSS'],
-  live: '#',
-  code: 'https://github.com/kunj2803/Kunj-Portfolio'
+  live: 'shruti-pandey-githu-git-c66413-shruti-pandeys-projects-5bfd685c.vercel.app',
+  code: 'https://github.com/Shruti-p1601/shruti-pandey.github.io'
   },
   {
     title: '💬 DocuChat – Gemini AI Chatbot',
     desc: 'An intelligent document interaction app powered by Gemini API that understands and answers queries from uploaded PDFs.',
     ss: '/Docuchat.png',
     tech: ['Gemini API', 'LangChain', 'Python', 'Streamlit'],
-    live: 'https://docuchat-chatbot.streamlit.app/',
-    code: 'https://github.com/kunj2803/Docuchat-Chatbot'
+    // live: 'https://docuchat-chatbot.streamlit.app/',
+    // code: 'https://github.com/kunj2803/Docuchat-Chatbot'
+  },
+  // {
+  //   title: '📊 ProfileX – Data Profiler',
+  //   desc: 'Smart data profiling and preprocessing web app for CSV datasets — feature summary, missing value handling, and visualization.',
+  //   ss: '/ProfileX.png',
+  //   tech: ['Streamlit', 'Pandas', 'Plotly'],
+  //   live: 'https://profilex.streamlit.app/',
+  //   code: 'https://github.com/kunjdesai/ProfileX'
+  // },
+  // {
+  //   title: '🧬 Breast Cancer Prediction',
+  //   desc: 'ML pipeline using SVC, Random Forest, and XGBoost with SMOTE for imbalanced dataset handling and model optimization.',
+  //   ss: '/breastpred.jpg',
+  //   tech: ['scikit-learn', 'XGBoost', 'Pandas'],
+  //   live: '#',
+  //   code: 'https://github.com/kunjdesai/BreastCancerPrediction'
+  // }
+  {
+  title: '📚  E-Learning Website',
+  desc: 'Beginner-friendly e-learning website with multiple course pages, login and registration UI, built to practice core web development concepts.',
+  ss: 'public/image.png',
+  tech: ['HTML', 'CSS', 'Java (Basic)'],
+  live: 'https://github.com/Shruti-p1601/First-project-e-learning',
+  code: 'https://github.com/Shruti-p1601/First-project-e-learning'
   },
   {
-    title: '📊 ProfileX – Data Profiler',
-    desc: 'Smart data profiling and preprocessing web app for CSV datasets — feature summary, missing value handling, and visualization.',
-    ss: '/ProfileX.png',
-    tech: ['Streamlit', 'Pandas', 'Plotly'],
-    live: 'https://profilex.streamlit.app/',
-    code: 'https://github.com/kunjdesai/ProfileX'
-  },
-  {
-    title: '🧬 Breast Cancer Prediction',
-    desc: 'ML pipeline using SVC, Random Forest, and XGBoost with SMOTE for imbalanced dataset handling and model optimization.',
-    ss: '/breastpred.jpg',
-    tech: ['scikit-learn', 'XGBoost', 'Pandas'],
-    live: '#',
-    code: 'https://github.com/kunjdesai/BreastCancerPrediction'
-  }
+  title: '🍓 Deep Learning–Based Dragon Fruit Quality Grading',
+  desc: 'Computer vision–based deep learning system to automatically classify dragon fruit quality using image preprocessing, augmentation, and CNN models.',
+  ss: 'public/dragon fruit.avif',
+  tech: ['Python', 'TensorFlow / Keras', 'OpenCV', 'NumPy', 'Pandas', 'Matplotlib'],
+  // live: '',
+  // code: 'https://github.com/Shruti-p1601/dragon-fruit-quality-grading'
+ },
+ {
+  title: '🤖 AI-based Resume Analyzer and Skill Gap Detector',
+  desc: 'An AI-powered resume analysis system developed as part of the Infosys AI initiative. The application compares resumes with job descriptions, identifies skill gaps, and provides actionable insights to improve ATS compatibility and job readiness.',
+  ss: 'public/resume.jpeg',
+  tech: ['Python', 'NLP', 'Pandas', 'Machine Learning'],
+  // live: 'https://your-live-link-here',
+  code: 'https://github.com/Shruti-p1601/Shruti-p1601-SkillGapAI'
+}
+
+
 ]
+
 
 export default function Projects() {
   return (

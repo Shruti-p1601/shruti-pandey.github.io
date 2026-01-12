@@ -28,7 +28,7 @@ const researchPapers = [
     description:
       "Automated quality grading of dragon fruit using deep learning-based image classification.",
     gallery: ["/jadavpur.jpeg", "/jadavpur2.jpeg", "/jadavpur3.jpg"],
-    certificate: "/dragon_certificate.pdf",
+    certificate: "public/jadavpur442.jpeg",
   },
 ]
 

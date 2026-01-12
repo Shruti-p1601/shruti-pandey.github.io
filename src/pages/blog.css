@@ -64,14 +64,17 @@
   margin-bottom: 1.5rem;
 }
 
+
 /* Vote Buttons Container */
 .vote-container {
   display: flex;
   gap: 1rem;
   justify-content: flex-start;
+  position: relative;
+  z-index: 10; /* 🔥 ensures clicks work */
 }
 
-/* Vote Button Style */
+/* Base Vote Button */
 .vote-btn-circle {
   background: rgba(255, 255, 255, 0.08);
   border: none;
@@ -85,33 +88,41 @@
   transition: all 0.25s ease;
   position: relative;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  pointer-events: auto; /* 🔥 critical */
 }
 
+/* Hover */
 .vote-btn-circle:hover {
   background: rgba(255, 255, 255, 0.12);
 }
 
-.vote-btn-circle.active.agree {
-  background: rgba(0, 255, 130, 0.15);
+/* Agree (Thumbs Up) */
+.vote-btn-circle.agree {
+  border: 1px solid rgba(0, 255, 130, 0.4);
+}
+
+.vote-btn-circle.agree-active {
+  background: rgba(0, 255, 130, 0.18);
   color: #00ff82;
-  box-shadow: 0 0 8px rgba(0, 255, 130, 0.4);
+  box-shadow: 0 0 8px rgba(0, 255, 130, 0.45);
 }
 
-.vote-btn-circle.active.disagree {
-  background: rgba(255, 0, 70, 0.15);
+/* Disagree (Thumbs Down) */
+.vote-btn-circle.disagree {
+  border: 1px solid rgba(255, 0, 70, 0.4);
+}
+
+.vote-btn-circle.disagree-active {
+  background: rgba(255, 0, 70, 0.18);
   color: #ff0050;
-  box-shadow: 0 0 8px rgba(255, 0, 70, 0.4);
+  box-shadow: 0 0 8px rgba(255, 0, 70, 0.45);
 }
 
-.vote-btn-circle:disabled {
-  opacity: 0.8;
-  cursor: not-allowed;
-}
-
-/* Vote Count Number */
+/* Vote Count */
 .vote-count {
   position: absolute;
-  bottom: -0.5rem;
+  bottom: -0.6rem;
   font-size: 0.7rem;
   color: #aaa;
 }
+
